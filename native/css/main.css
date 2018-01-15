@@ -3,6 +3,10 @@ html{
     width: 100%;
 }
 
+body{
+    background-color: #FFE4E1;
+}
+
 .body-main{
     margin: 0 20%;
     width: 60%;
