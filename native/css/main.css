@@ -19,13 +19,13 @@ body{
     text-overflow: ellipsis;
 }
 
-.main-article{
+.main-project{
     width: 100%;
     border: 1px solid gray;
     border-radius: 5px;
 }
 
-.main-article ul{
+.main-project ul{
     overflow: hidden;
     padding: 0 !important;
     margin: 0 !important;
@@ -33,14 +33,14 @@ body{
     text-overflow: ellipsis;
 }
 
-.main-article li{
+.main-project li{
     float: left;
     list-style: none;
     width: calc(100%/2 - 1rem);
     padding: 0.5rem;
 }
 
-.main-article h2{
+.main-project h2{
     height: 1rem;
     margin: 0;
     padding: 5px;
@@ -48,7 +48,7 @@ body{
     color: gray;
 }
 
-.main-article section{
+.main-project section{
     height: 180px;
     border: 2px solid rgb(39, 128, 157);
     border-radius: 10px;
@@ -57,11 +57,11 @@ body{
     padding: 0.5rem 0.2rem;
 }
 
-.main-article section a{
+.main-project section a{
     text-decoration: none;
 }
 
-.main-article section div{
+.main-project section div{
     height: calc(100% - 2rem);
     margin: 0;
     padding: 5px;

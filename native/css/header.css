@@ -5,7 +5,8 @@
     border: 1px solid gray;
     border-radius: 5px;
 }
-.header-righ{
+
+.header-user_info{
     margin: 1rem 0 1rem 10rem;
     height: 8rem;
     width: calc(100% - 10rem);
