@@ -6,6 +6,16 @@
     height: 100%;
 }
 
+@media (max-width: 768px) {
+    .body-aside{
+        position: absolute;
+        right: 0;
+        width: 20%;
+        height: 100%;
+        display: none;
+    }
+}
+
 .aside-code{
     position: absolute;
     top: 50%;

@@ -13,6 +13,14 @@ body{
     height: 100%;
 }
 
+@media (max-width: 768px) {
+    .body-main{
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
 .overflow_omit{
     overflow: hidden;
     white-space: nowrap;
