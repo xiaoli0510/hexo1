@@ -1,0 +1,19 @@
+{
+    "user_name":"肖肖",
+    "user_photo":"./images/photo.jpg",
+    "user_desc":"肖肖爱前端，沒毛病",
+    "user_nav":[
+        {
+            "name":"我的博客",
+            "link":"http://blog.csdn.net/fxp850899969"
+        },
+        {
+            "name":"我的Github",
+            "link":"https://github.com/xiaoli0510"
+        },
+        {
+            "name":"我的微博",
+            "link":"#"
+        }
+    ]
+}

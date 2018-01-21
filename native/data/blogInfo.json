@@ -1,0 +1,20 @@
+{
+    "blog_address":"http://blog.csdn.net/fxp850899969",
+    "article_list":[
+        {
+            "title":"JS实现二级列表（包含下拉刷新、上拉加载更多、侧滑操作等）",
+            "link":"http://blog.csdn.net/fxp850899969/article/details/70158440",
+            "desc":"本篇文章讲述的是使用js实现可收缩二级列表，包含以下特性：1，点击打开／收缩二级列表；2，列表下拉刷新数据；3，列表上拉加载更多数据；4，列表item项可侧滑操作（类似于QQ和微信）；5，数据缓存；"
+        },
+        {
+            "title":"echarts3实现柱状图和饼图详解",
+            "link":"http://blog.csdn.net/fxp850899969/article/details/69951013",
+            "desc":"本篇文章实现的是以下两种需求：1，使用Echarts3实现柱状图；2，使用Echarts3实现饼图；包含Echarts使用过程中遇到的部分坑的解决办法。"
+        },
+        {
+            "title":"js实现对Android设备物理返回键单击／双击事件处理（Framework7框架）",
+            "link":"http://blog.csdn.net/fxp850899969/article/details/53322857",
+            "desc":"1,单击事件实现效果为，当前页面为首页时直接退出应用，不是首页时返回上一级;2,双击事件实现效果为，点击物理返回键时toast提示“连续点击退出应用程序”，1秒内再次点击即退出。"
+        }
+    ]
+}

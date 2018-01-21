@@ -1,0 +1,15 @@
+{
+    "github_address":"",
+    "project_list":[
+        {
+            "title":"JsExpandableList",
+            "link":"https://github.com/xiaoli0510/JsExpandableList",
+            "desc":"使用js实现的可收缩二级列表，包含以下特性：1，点击打开／收缩二级列表；2，列表下拉刷新数据；3，列表上拉加载更多数据；4，列表item项可侧滑操作（类似于QQ和微信）；5，数据缓存；"
+        },
+        {
+            "title":"Personal Home Page",
+            "link":"https://github.com/xiaoli0510/xiaoli0510.github.io",
+            "desc":"开源Github个人主页，分为三个版本：1 native版（原生）2 Vue版3 BootStrap版。麻雀虽小五脏俱全，适合新手学习使用。原生版本迭代开发中，其他版本后续推出，敬请期待！"
+        }
+    ]
+}
