@@ -11,7 +11,11 @@ var native = {
 
         this.rendBlogInfo();
     },
-    bindEvent:function(method){},
+    bindEvent:function(method){
+        if(method == "on" || method == "off"){
+            
+        }
+    },
     rendUserInfo:function(){
         this.get("data/userInfo.json",function(data){
             console.log(data);
