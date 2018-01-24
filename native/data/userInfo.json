@@ -1,6 +1,6 @@
 {
     "user_name":"肖肖",
-    "user_photo":"./images/photo.jpg",
+    "user_photo":"../images/photo.jpg",
     "user_desc":"肖肖爱前端，沒毛病",
     "user_nav":[
         {

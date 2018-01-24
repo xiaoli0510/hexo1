@@ -1,0 +1,95 @@
+{
+    "head": {
+        "title": "肖肖的个人主页",
+        "keyword": "肖丽,肖肖,肖丽的主页,肖丽的博客,肖丽CSDN,Web前端",
+        "desc": "肖肖爱前端",
+        "icon": "../images/page_icon.ico"
+    },
+    "body": {
+        "header": {
+            "user_name": "肖肖",
+            "user_photo": "../images/photo.jpg",
+            "user_desc": "肖肖爱前端，沒毛病",
+            "user_nav": [
+                {
+                    "name": "我的博客",
+                    "link": "http://blog.csdn.net/fxp850899969"
+                },
+                {
+                    "name": "我的Github",
+                    "link": "https://github.com/xiaoli0510"
+                },
+                {
+                    "name": "我的微博",
+                    "link": "#"
+                }
+            ]
+        },
+        "aside": {
+            "lable": "扫一扫加我好友",
+            "code_img": "./images/photo.jpg"
+        },
+        "main": {
+            "project": {
+                "github_address": "",
+                "project_list": [
+                    {
+                        "title": "JsExpandableList",
+                        "link": "https://github.com/xiaoli0510/JsExpandableList",
+                        "desc": "使用js实现的可收缩二级列表，包含以下特性：1，点击打开／收缩二级列表；2，列表下拉刷新数据；3，列表上拉加载更多数据；4，列表item项可侧滑操作（类似于QQ和微信）；5，数据缓存；"
+                    },
+                    {
+                        "title": "Personal Home Page",
+                        "link": "https://github.com/xiaoli0510/xiaoli0510.github.io",
+                        "desc": "开源Github个人主页，分为三个版本：1 native版（原生）2 Vue版3 BootStrap版。麻雀虽小五脏俱全，适合新手学习使用。原生版本迭代开发中，其他版本后续推出，敬请期待！"
+                    }
+                ]
+            },
+            "blog": {
+                "blog_address": "http://blog.csdn.net/fxp850899969",
+                "article_list": [
+                    {
+                        "title": "JS实现二级列表（包含下拉刷新、上拉加载更多、侧滑操作等）",
+                        "link": "http://blog.csdn.net/fxp850899969/article/details/70158440",
+                        "desc": "本篇文章讲述的是使用js实现可收缩二级列表，包含以下特性：1，点击打开／收缩二级列表；2，列表下拉刷新数据；3，列表上拉加载更多数据；4，列表item项可侧滑操作（类似于QQ和微信）；5，数据缓存；"
+                    },
+                    {
+                        "title": "echarts3实现柱状图和饼图详解",
+                        "link": "http://blog.csdn.net/fxp850899969/article/details/69951013",
+                        "desc": "本篇文章实现的是以下两种需求：1，使用Echarts3实现柱状图；2，使用Echarts3实现饼图；包含Echarts使用过程中遇到的部分坑的解决办法。"
+                    },
+                    {
+                        "title": "js实现对Android设备物理返回键单击／双击事件处理（Framework7框架）",
+                        "link": "http://blog.csdn.net/fxp850899969/article/details/53322857",
+                        "desc": "1,单击事件实现效果为，当前页面为首页时直接退出应用，不是首页时返回上一级;2,双击事件实现效果为，点击物理返回键时toast提示“连续点击退出应用程序”，1秒内再次点击即退出。"
+                    }
+                ]
+            }
+        },
+        "footer": {
+            "copyright": "Copyright &copy; 2018 XiaoLi",
+            "friend_links": [
+                {
+                    "name": "CSDN",
+                    "link": "https://www.csdn.net/"
+                },
+                {
+                    "name": "简书",
+                    "link": "https://www.jianshu.com/"
+                },
+                {
+                    "name": "掘金",
+                    "link": "https://juejin.im/"
+                },
+                {
+                    "name": "知乎",
+                    "link": "https://www.zhihu.com"
+                },
+                {
+                    "name": "慕课网",
+                    "link": "https://www.imooc.com/"
+                }
+            ]
+        }
+    }
+}
