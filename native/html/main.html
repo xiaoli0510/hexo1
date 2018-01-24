@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <title>肖肖的个人主页</title>
+    <meta name="Keywords" content="肖丽,肖肖,肖丽的主页,肖丽的博客,肖丽CSDN,Web前端" />
+    <meta name="Description" content="肖肖爱前端" />
+    <link href="../css/header.css" rel="stylesheet">
+    <link href="../css/aside.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/footer.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../images/page_icon.ico">
+</head>
+
+<body>
+    <header id="header" class="body-header"></header>
+    <script id="art-header" type="text/html">
+        <img class="header-user_photo" src="{{user_photo}}" alt="photo"> 
+        <div class="header-user_info">
+            <hgroup>
+                <h1 class="header-user_name">{{user_name}}</h1>
+                <h5 class="header-user_desc">{{user_desc}}</h5>
+            </hgroup>
+            <nav class="header-nav">
+                <ul class="nav-ul">
+                    {{each user_nav nav index}}
+                    <li class="nav-li">
+                        <a href="{{nav.link}}">{{nav.name}}</a>
+                    </li>
+                    {{/each}}
+                </ul>
+            </nav>
+        </div>
+    </script>
+
+    <aside id="aside" class="body-aside"></aside>
+    <script id="art-aside" type="text/html">
+        <div class="aside-code">
+            <img class="aside-code-img" src="{{code_img}}"/>
+            <p class="aside-code-lable">{{lable}}</p>
+        </div>
+    </script>
+
+    <main class="body-main">
+        <article id="main_project" class="main-project"></article>
+        <script id="art-main_project" type="text/html">
+            <h2>开源项目</h2>
+            <ul>
+                {{each project_list project index}}
+                <li>
+                    <section>
+                        <a href="{{project.link}}">
+                            <h2 class="overflow_omit">{{project.title}}</h2>
+                            <div class="overflow_omit">{{project.desc}}</div>
+                        </a>
+                    </section>
+                </li>
+                {{/each}}
+            </ul>
+        </script>
+        
+        <article id="main_blog" class="main-blog"></article>
+        <script id="art-main_blog" type="text/html">
+            <h2>博客文章</h2>
+            <ul>
+                {{each article_list article index}}
+                <li>
+                    <section>
+                        <a href="{{article.link}}">
+                            <h2 class="overflow_omit">{{article.title}}</h2>
+                            <div class="overflow_omit">{{article.desc}}</div>
+                        </a>
+                    </section>
+                </li>
+                {{/each}}
+            </ul>
+            <h3 class="main-view_more">
+                <a href="{{blog_address}}">查看更多</a>
+            </h3>
+        </script>
+
+        <article>
+            <!-- UY BEGIN -->
+            <div id="uyan_frame"></div>
+            <!-- UY END -->
+        </article>
+    </main>
+
+    <div id="footer" class="body-footer"></div>
+    <script id="art-footer" type="text/html">
+        <aside class="footer-aside_link">
+                <a>友情链接：</a>
+                {{each friend_links friend_link index}}
+                <a href="{{friend_link.link}}">{{friend_link.name}}</a>|
+                {{/each}}
+            </aside>
+            <footer>
+                <p class="footer-copyright">{{copyright}}</p>
+            </footer>
+    </script>
+
+    <script src="../js/template-web.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/canvas-nest.js"></script>
+    <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2155453"></script>
+</body>
+</script>
+
+</html>
