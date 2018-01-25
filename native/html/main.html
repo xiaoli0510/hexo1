@@ -98,11 +98,12 @@
         <aside class="footer-aside_link">
                 <a>友情链接：</a>
                 {{each friend_links friend_link index}}
-                <a href="{{friend_link.link}}">{{friend_link.name}}</a>|
+                <a href="{{friend_link.link}}">{{friend_link.name}}</a>
+                {{if index!=friend_links.length-1 }}|{{/if}}
                 {{/each}}
             </aside>
             <footer>
-                <p class="footer-copyright">{{copyright}}</p>
+                <p class="footer-copyright">Copyright &copy; {{copyright}}</p>
             </footer>
     </script>
 
@@ -111,6 +112,5 @@
     <script src="../js/canvas-nest.js"></script>
     <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2155453"></script>
 </body>
-</script>
 
 </html>
