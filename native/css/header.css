@@ -6,15 +6,6 @@
     border-radius: 5px;
 }
 
-@media (max-width: 768px) {
-    .body-header {
-        width: 100%;
-        margin: 1rem 0;
-        border: 1px solid gray;
-        border-radius: 5px;
-    }
-}
-
 .header-user_info{
     margin: 1rem 0 1rem 10rem;
     height: 8rem;
@@ -44,10 +35,15 @@
     overflow: hidden;
 }
 
-.header-nav{
+.header-nav-pc{
+    display:block;
     overflow: hidden;
     height: 1.5rem;
     bottom: 0;
+}
+
+.header-nav-mobile{
+    display:none
 }
 
 .nav-ul{
@@ -72,4 +68,57 @@
     text-decoration: none;
     color: black;
     font-style: normal;
+}
+
+@media (max-width: 768px) {
+    .body-header {
+        width: 100%;
+        margin: 1rem 0;
+        border: 1px solid gray;
+        border-radius: 5px;
+    }
+
+    .header-user_photo {
+        float: left;
+        height: 8rem;
+        width: 8rem;
+        margin: 1rem;
+        border-radius: 100%;
+    }
+
+    .header-user_name{
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 1rem 0;
+    }
+
+    .header-user_desc{
+        height: 4rem;
+        text-align: center;
+        font-size: 1rem;
+        color: gray;
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+        overflow: hidden;
+    }    
+
+    .header-nav-pc{
+        display:none
+    }
+    
+    .header-nav-mobile{
+        display:block;
+        overflow: hidden;
+        height: 1.5rem;
+        bottom: 0;
+    }
+
+    .nav-li{
+        float: left;
+        list-style: none;
+        margin-left: 0;
+        margin-right: 0;
+        width: 33%;
+        text-align: center;
+    }
 }

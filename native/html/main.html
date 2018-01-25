@@ -64,7 +64,7 @@
                 <h1 class="header-user_name">{{user_name}}</h1>
                 <h5 class="header-user_desc">{{user_desc}}</h5>
             </hgroup>
-            <nav class="header-nav">
+            <nav class="header-nav-pc">
                 <ul class="nav-ul">
                     {{each user_nav nav index}}
                     <li class="nav-li">
@@ -74,6 +74,15 @@
                 </ul>
             </nav>
         </div>
+        <nav class="header-nav-mobile">
+                <ul class="nav-ul">
+                    {{each user_nav nav index}}
+                    <li class="nav-li">
+                        <a href="{{nav.link}}">{{nav.name}}</a>
+                    </li>
+                    {{/each}}
+                </ul>
+        </nav>
     </script>
 
     <aside id="aside" class="body-aside"></aside>
