@@ -15,6 +15,10 @@
     font-size: 0.8rem;
 }
 
+.footer-aside_link span{
+    font-size: 0.8rem;
+}
+
 .footer-copyright{
     text-align: center;
     margin: 0;
@@ -29,8 +33,12 @@
     }
 
     .footer-aside_link a{
-        margin: 0 0.1rem;
-        font-size: 0.3rem;
+        margin: 0 0.2rem;
+        font-size: 0.4rem;
+    }
+
+    .footer-aside_link span{
+        font-size: 0.4rem;
     }
 
     .footer-copyright{

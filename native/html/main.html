@@ -132,7 +132,9 @@
                 <a>友情链接：</a>
                 {{each friend_links friend_link index}}
                 <a href="{{friend_link.link}}">{{friend_link.name}}</a>
-                {{if index!=friend_links.length-1 }}|{{/if}}
+                {{if index!=friend_links.length-1 }}
+                <span>|</span>
+                {{/if}}
                 {{/each}}
             </aside>
             <footer>
