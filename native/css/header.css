@@ -1,15 +1,16 @@
 
 .body-header{
     width: 60%;
+    height: 10rem;
     margin: 1rem 20%;
     border: 1px solid gray;
     border-radius: 5px;
 }
 
 .header-user_info{
-    margin: 1rem 0 1rem 10rem;
-    height: 8rem;
+    margin: 1rem 0 0 10rem;
     width: calc(100% - 10rem);
+    height: 6.5rem;
     overflow: hidden;
 }
 
@@ -35,15 +36,11 @@
     overflow: hidden;
 }
 
-.header-nav-pc{
-    display:block;
+.header-nav{
+    margin-left: 10rem;
     overflow: hidden;
     height: 1.5rem;
     bottom: 0;
-}
-
-.header-nav-mobile{
-    display:none
 }
 
 .nav-ul{
@@ -73,10 +70,18 @@
 @media (max-width: 768px) {
     .body-header {
         width: 100%;
+        height: 11.5rem;
         margin: 1rem 0;
         border: 1px solid gray;
         border-radius: 5px;
     }
+
+    .header-user_info{
+        width: calc(100% - 10rem);
+        height: 9rem;
+        margin: 1rem 0 0 10rem;
+        overflow: hidden;
+    }    
 
     .header-user_photo {
         float: left;
@@ -103,12 +108,8 @@
         overflow: hidden;
     }    
 
-    .header-nav-pc{
-        display:none
-    }
-    
-    .header-nav-mobile{
-        display:block;
+    .header-nav{
+        margin-left: 0;
         overflow: hidden;
         height: 1.5rem;
         bottom: 0;

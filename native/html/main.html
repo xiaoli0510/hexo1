@@ -12,9 +12,6 @@
     <link href="../css/footer.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="../images/page_icon.ico">
     <!-- 适应移动端start -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="format-detection"content="telephone=no, email=no" />
     <!-- width viewport 宽度(数值/device-width)
         height viewport 高度(数值/device-height)
         initial-scale 初始缩放比例
@@ -64,24 +61,15 @@
                 <h1 class="header-user_name">{{user_name}}</h1>
                 <h5 class="header-user_desc">{{user_desc}}</h5>
             </hgroup>
-            <nav class="header-nav-pc">
-                <ul class="nav-ul">
-                    {{each user_nav nav index}}
-                    <li class="nav-li">
-                        <a href="{{nav.link}}">{{nav.name}}</a>
-                    </li>
-                    {{/each}}
-                </ul>
-            </nav>
         </div>
-        <nav class="header-nav-mobile">
-                <ul class="nav-ul">
-                    {{each user_nav nav index}}
-                    <li class="nav-li">
-                        <a href="{{nav.link}}">{{nav.name}}</a>
-                    </li>
-                    {{/each}}
-                </ul>
+        <nav class="header-nav">
+            <ul class="nav-ul">
+                {{each user_nav nav index}}
+                <li class="nav-li">
+                    <a href="{{nav.link}}">{{nav.name}}</a>
+                </li>
+                {{/each}}
+            </ul>
         </nav>
     </script>
 
