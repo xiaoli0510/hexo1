@@ -34,7 +34,7 @@ var native = {
 
     },
     rendUserInfo: function () {
-        this.get("../data/userInfo.json", function (res) {
+        utils.get("../data/userInfo.json", function (res) {
             var html = native.buildUserBox(JSON.parse(res));
             document.getElementsByClassName("body-header")[0].innerHTML = html;
         }, function (error) {
@@ -42,7 +42,7 @@ var native = {
         });
     },
     rendProjectInfo: function () {
-        this.get("../data/projectInfo.json", function (res) {
+        utils.get("../data/projectInfo.json", function (res) {
             var html = native.buildProjectBox(JSON.parse(res));
             document.getElementsByClassName("main-project")[0].innerHTML = html;
         }, function (error) {
@@ -50,7 +50,7 @@ var native = {
         });
     },
     rendBlogInfo: function () {
-        this.get("../data/blogInfo.json", function (res) {
+        utils.get("../data/blogInfo.json", function (res) {
             var html = native.buildBlogBox(JSON.parse(res));
             document.getElementsByClassName("main-blog")[0].innerHTML = html;
         }, function (error) {
@@ -58,7 +58,7 @@ var native = {
         });
     },
     rendAsideInfo: function () {
-        this.get("../data/asideInfo.json", function (res) {
+        utils.get("../data/asideInfo.json", function (res) {
             var html = native.buildAsideBox(JSON.parse(res));
             document.getElementsByClassName("body-aside")[0].innerHTML = html;
         }, function (error) {
@@ -66,7 +66,7 @@ var native = {
         });
     },
     rendFooter: function () {
-        this.get("../data/footerInfo.json", function (res) {
+        utils.get("../data/footerInfo.json", function (res) {
             var html = native.buildFooterBox(JSON.parse(res));
             document.getElementsByClassName("body-footer")[0].innerHTML = html;
         }, function (error) {
@@ -139,68 +139,6 @@ var native = {
     },
     rend: function (data) {
 
-    },
-    get: function (url, sf, ef, p) {
-        this.ajax({
-            url: url,
-            async: true,
-            method: 'GET',
-            contentType: 'application/x-www-form-urlencoded',
-            crossDomain: true,
-            success: function (response, xml) {
-                if ('function' == typeof sf)
-                    sf(response, p);
-            },
-            fail: function (status) {
-                if ('function' == typeof ef)
-                    ef(status, p);
-            }
-        });
-    },
-    ajax: function (options) {
-        options = options || {};
-        options.type = (options.type || "GET").toUpperCase();
-        options.dataType = options.dataType || "json";
-        var params = this.formatParams(options.data);
-
-        //创建 - 非IE6 - 第一步
-        if (window.XMLHttpRequest) {
-            var xhr = new XMLHttpRequest();
-        } else { //IE6及其以下版本浏览器
-            var xhr = new ActiveXObject('Microsoft.XMLHTTP');
-        }
-
-        //接收 - 第三步
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState == 4) {
-                var status = xhr.status;
-                if (status >= 200 && status < 300) {
-                    options.success && options.success(xhr.responseText, xhr.responseXML);
-                } else {
-                    options.fail && options.fail(status);
-                }
-            }
-        }
-
-        //连接 和 发送 - 第二步
-        if (options.type == "GET") {
-            xhr.open("GET", options.url + "?" + params, true);
-            xhr.send(null);
-        } else if (options.type == "POST") {
-            xhr.open("POST", options.url, true);
-            //设置表单提交时的内容类型
-            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-            xhr.send(params);
-        }
-    },
-    //格式化参数
-    formatParams: function (data) {
-        var arr = [];
-        for (var name in data) {
-            arr.push(encodeURIComponent(name) + "=" + encodeURIComponent(data[name]));
-        }
-        arr.push(("v=" + Math.random()).replace(".", ""));
-        return arr.join("&");
     }
 }
 
