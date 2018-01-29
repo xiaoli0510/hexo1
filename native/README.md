@@ -5,7 +5,7 @@
 
 [点击](https://xiaoli0510.github.io/native/html/main-native.html)浏览效果
 
-###技术点
+### 技术点
 *****
 1. web标签语义化及seo优化；
 2. 移动端适配（meta，rem，1px）；
