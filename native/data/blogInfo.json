@@ -1,20 +1,40 @@
 {
-    "blog_address":"http://blog.csdn.net/fxp850899969",
+    "blog_address":"https://blog.csdn.net/xiaoxiaoluckylucky",
     "article_list":[
         {
             "title":"JS实现二级列表（包含下拉刷新、上拉加载更多、侧滑操作等）",
-            "link":"http://blog.csdn.net/fxp850899969/article/details/70158440",
+            "link":"https://blog.csdn.net/xiaoxiaoluckylucky/article/details/79373835",
             "desc":"本篇文章讲述的是使用js实现可收缩二级列表，包含以下特性：1，点击打开／收缩二级列表；2，列表下拉刷新数据；3，列表上拉加载更多数据；4，列表item项可侧滑操作（类似于QQ和微信）；5，数据缓存；"
         },
         {
             "title":"echarts3实现柱状图和饼图详解",
-            "link":"http://blog.csdn.net/fxp850899969/article/details/69951013",
+            "link":"https://blog.csdn.net/xiaoxiaoluckylucky/article/details/79374055",
             "desc":"本篇文章实现的是以下两种需求：1，使用Echarts3实现柱状图；2，使用Echarts3实现饼图；包含Echarts使用过程中遇到的部分坑的解决办法。"
         },
         {
             "title":"js实现对Android设备物理返回键单击／双击事件处理（Framework7框架）",
-            "link":"http://blog.csdn.net/fxp850899969/article/details/53322857",
+            "link":"https://blog.csdn.net/xiaoxiaoluckylucky/article/details/79374108",
             "desc":"1,单击事件实现效果为，当前页面为首页时直接退出应用，不是首页时返回上一级;2,双击事件实现效果为，点击物理返回键时toast提示“连续点击退出应用程序”，1秒内再次点击即退出。"
+        },
+        {
+            "title":"音乐播放器",
+            "link":"https://blog.csdn.net/xiaoxiaoluckylucky/article/details/79585257",
+            "desc":"此项目是用vue写的一个音乐播放器，断断续续花了半个月的时间，刚开始是懵的，写着写着就顺了。上拉加载、下拉刷新使用的是better-scroll。改变播放方式是用vuex来实现。mini状态下的小播放器，可操作上一曲、下一曲、播放、暂停。"
+        },
+        {
+            "title":"vue仿今日头条",
+            "link":"https://blog.csdn.net/xiaoxiaoluckylucky/article/details/79360925",
+            "desc":"本篇文章讲述的是使用vue.js 2.0 高仿今日头条。技术栈如下：1.vue、vuex、vue-router、axios；2.iview、element-ui；3.vue-lazyload、flexible.js"
+        },
+        {
+            "title":"在iframe里面用模态框，如何使遮罩层占满整个屏幕",
+            "link":"https://blog.csdn.net/xiaoxiaoluckylucky/article/details/80084788",
+            "desc":"本篇文章讲述的是如何使iframe中模态框的遮罩层占满整个屏幕（解决办法：在父元素页面里面定义方法，然后在子元素子页面调用父元素的方法，即可实现遮罩层占满屏幕。"
+        },
+        {
+            "title":"官网注意事项",
+            "link":"https://blog.csdn.net/xiaoxiaoluckylucky/article/details/79819022",
+            "desc":"本篇文章讲述的是自己在优化公司官网过程中的实践经验，包括响应式开发及用户体验提升等方面，希望能对大家有所帮助。"
         }
     ]
 }
