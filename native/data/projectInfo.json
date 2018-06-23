@@ -1,5 +1,5 @@
 {
-    "github_address":"",
+    "github_address":"https://github.com/xiaoli0510",
     "project_list":[
         {
             "title":"JsExpandableList",
@@ -10,6 +10,16 @@
             "title":"Personal Home Page",
             "link":"https://github.com/xiaoli0510/xiaoli0510.github.io",
             "desc":"开源Github个人主页，分为三个版本：1 native版（原生）2 Vue版3 BootStrap版。麻雀虽小五脏俱全，适合新手学习使用。原生版本迭代开发中，其他版本后续推出，敬请期待！"
+        },
+        {
+            "title":"高仿QQ音乐播放器",
+            "link":"https://github.com/xiaoli0510/music",
+            "desc":"高仿QQ音乐播放器，使用vue实现。页面数据及渲染OK，可正常搜索及播放音乐。欢迎交流讨论！"
+        },
+        {
+            "title":"高仿今日头条",
+            "link":"https://github.com/xiaoli0510/toutiao",
+            "desc":"高仿今日头条，使用vue实现。页面数据及渲染OK，功能正常使用。欢迎交流讨论！"
         }
     ]
 }
